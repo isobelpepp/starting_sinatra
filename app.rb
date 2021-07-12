@@ -14,5 +14,6 @@ get '/' do
   end
   
   get '/cat' do
+    @sample_name = ['Amigo', 'Misty', 'Almond'].sample
     erb(:index)
   end
